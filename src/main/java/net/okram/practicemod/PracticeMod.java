@@ -2,6 +2,7 @@ package net.okram.practicemod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.okram.practicemod.block.ModBlocks;
 import net.okram.practicemod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,5 +14,7 @@ public class PracticeMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
         ModItems.registerModItems();
+        ModBlocks.registerModBlocks();
 	}
+
 }
